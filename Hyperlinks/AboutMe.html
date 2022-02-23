@@ -8,7 +8,7 @@
   <meta name="keywords" content="Tshepiso Dimpe, Dimpe Portfolio, godlygraphics">
 
 <style>
-ul , h6,h5,h4,h2 {
+ul ,  h6,h5,h4,h2, section{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -63,32 +63,61 @@ footer{
 </nav>
 <div>
 
-   <h1>Tshepiso Dimpe<img id="picture" src="../img/me.jpg" title="mypic" alt="profile picture" width="200" height="200"></h1>
-   
-  <p> My name is Tshepiso Dimpe, a potential graduate who is willing to learn and expand in the ICT industry. I am passionate about graphic design work, programming, and web development. The aim is to expand and share my knowledge within the ICT industry, Open to learning...</p>
+   <h1 id="name"></h1> <img id="picture" src="../img/me.jpg" title="mypic" alt="profile picture" width="200" height="200"> 
+  <p id="bio"> </p></br>
   
 
 </div></br></br></br></br></br></br></br></br></br>
 
 <div>
   <h2>EDUCATION- TERTIARY </h2>
-  <h3> Tshwane University Of Technology</h3>
+  <h3 id="university"> </h3>
   <h4> Years 2017-2021</h4>
-  <p> I studied Information Technology, specializing in Multimedia under the Department of Computer Science</p>
+  <p id="specialization"> </p>
 
   <h5> MAJORS </h5>
   
-    <p> Technical Programming(Java)</p>
-    <p>Internet Programming (C#) </p>
-    <p> Multimedia Design and Programming </p>
+    <p id="major1"></p>
+    <p id="major2"></p>
+    <p id="major3"></p>
   
 
-  <h6> QUALIFICATION</h6>
-  <p> National Diploma: Information Technology(Multimedia)-Incomplete </p>
-  <p>Currently looking for an internship to complete my qualification</p>
+  <h6 style="font-size:100%;"> QUALIFICATION</h6>
+  <p id="quad"> </p>
+  <p>Currently looking for an internship to complete my qualification</p></br>
+
+  <section><strong> PERSONAL INFORMATION</strong></section>
+  <p id="dateBirth"></p>
+  <p id= "Phone"></p>
+  <p id="Email"></p>
+  <section><strong> OTHERS </strong></section>
+  <p> Logo designer </p>
+  <p>Business Cards designer </p>
+  <p> Posters and Flyers </p>
+  <p> 3D Designer Skills</p>
+  
 
 </div>
 </main></br></br></br>
+<script>
+     
+
+      const userInformation= { name: "Tshepiso Dimpe", university: "Tshwane University Of Technology",major1: "Technical Programming(Java)", major2:"Internet Programming", major3: "Multimedia Design and Programming", specialisation:"I studied Information Technology, specializing in Multimedia under the Department of Computer Science", qualification: "National Diploma: Information Technology(Multimedia)-Incomplete ", dateBirth: "1996-08-09", phoneNumber:"074 967 7073", Email: "tshepisodimpe@gmail.com"};
+
+
+    document.getElementById("major1").innerHTML= userInformation.major1;
+    document.getElementById("major2").innerHTML= userInformation.major2; 
+    document.getElementById("major3").innerHTML= userInformation.major3;  
+    document.getElementById("name").innerHTML= userInformation.name; 
+    document.getElementById("university").innerHTML= userInformation.university; 
+    document.getElementById("specialization").innerHTML= userInformation.specialisation;
+    document.getElementById("quad").innerHTML= userInformation.qualification;
+    document.getElementById("dateBirth").innerHTML= userInformation.dateBirth;
+    document.getElementById("Phone").innerHTML= userInformation.phoneNumber;
+    document.getElementById("Email").innerHTML=userInformation.Email;
+
+    document.getElementById("bio").innerHTML = "My name is Tshepiso Dimpe, a potential graduate who is willing to learn and expand in the ICT industry. I am passionate about graphic design work, programming, and web development. The aim is to expand and share my knowledge within the ICT industry, Open to learning...";
+</script>
 
 <footer>
    <table>
